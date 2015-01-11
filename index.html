@@ -3,9 +3,93 @@
   <head>
     <link rel="stylesheet" href="normalize.css" >
     <link rel="stylesheet" href="style.css" >
+   <!--  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> -->
   </head>
 
   <body>
+    <div id="container">
+      <div id="content">
+        <div class="contents">
+          <aside id="sidebar">
+            <div id="logo-wrapper"><img src="ventLogo.svg">
+            </div>
+            <div id="createProduct">Create Item</div>
+            <ul class="navList">
+              <li>Home</li>
+              <li>Manage</li>
+              <li>Users</li>
+              <li>History</li>
+            </ul>
+          </aside>
+          <div id="main" class>
+            <header class="masthead">
+              <h1>Items</h1>
+              <div class="buttonGroup"></div>
+            </header>
+            <table class='droplet-listing'>
+              <thead>
+              <tr>
+                <th class='image'>Image</th>
+                <th class='name'>Name</th>
+                <th class='ip'>IP Address</th>
+                <th class='status'>Status</th>
+                <th class='memory'>Memory</th>
+                <th class='disk'>Disk</th>
+                <th class='region'>Region</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class='image'>
+                <span class='icon ubuntu' data-toggle='tooltip' title='14.04 x32'></span>
+                </td>
+                <td class='name' title='edawebdesign.com'>
+                <a href="/droplets/3032435">edawebdesign.com</a>
+                </td>
+                <td class='ip'>
+                104.131.99.39
+                </td>
+                <td class='active status'>
+                Active
+                </td>
+                <td class='memory'>
+                512 MB
+                </td>
+                <td class='disk'>
+                20 GB
+                </td>
+                <td class='region'>
+                nyc3
+                </td>
+              </tr>
+              <tr>
+                <td class='image'>
+                <span class='icon ubuntu' data-toggle='tooltip' title='MEAN on 14.04'></span>
+                </td>
+                <td class='name' title='vent.ninja'>
+                <a href="/droplets/3733498">vent.ninja</a>
+                </td>
+                <td class='ip'>
+                192.241.195.209
+                </td>
+                <td class='active status'>
+                Active
+                </td>
+                <td class='memory'>
+                512 MB
+                </td>
+                <td class='disk'>
+                20 GB
+                </td>
+                <td class='region'>
+                sfo1
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-
 </html>
