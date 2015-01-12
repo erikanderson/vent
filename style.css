@@ -42,7 +42,7 @@ body {
   display: block;
   font-size: 16px;
   font-weight: 400;
-  line-height: 44px;
+  line-height: 50px;
   margin: 0 auto;
   text-align: center;
   width: 145px;
@@ -103,4 +103,45 @@ cursor: pointer;
 #content table tbody tr td a {
  text-decoration: none;
  color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  #logo-wrapper {
+    display: none;
+  }
+
+  #sidebar {
+    width: 750px;
+    height: 60px;
+    position: fixed;
+  }
+
+  #createProduct {
+    display: inline-block;
+    float: left;
+  }
+
+  #sidebar ul{
+    height: 44px;
+    float: left;
+    width: 500px;
+    margin: 0;
+  }
+ #sidebar ul li {
+  font-size: 16px;
+  height: 40px;
+  cursor: pointer;
+  display: inline;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+  header {
+    display: none;
+  }
+  #content #main {
+/*    display: block;*/
+    padding-left: 10px;
+    padding-top: 60px;
+  }
 }
