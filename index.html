@@ -37,12 +37,14 @@
                   <th>Item Name</th>
                   <th>Created At</th>
                   <th>Modified At</th>
+                  <th>Delete Item</th>
                 </tr>
                 <tr ng-repeat="item in items">
                   <td>{{ item.objectId }}</td>
                   <td>{{ item.itemName }}</td>
                   <td>{{ item.createdAt }}</td>
                   <td>{{ item.updatedAt }}</td>
+                  <td><button class="btn btn-danger" ng-click="removeVentData('{{item.objectId}}')">Delete</button></td>
                 </tr>
               </table>
 

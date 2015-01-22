@@ -7,7 +7,7 @@ app.service('dataService', function($http) {
       method: 'GET',
       url: "https://api.parse.com/1/classes/vent"
     })
-  }
+  };
 
   this.postData = function(newItemName) {
     return $http({
@@ -16,4 +16,11 @@ app.service('dataService', function($http) {
       data: {'itemName': newItemName}
     })
   };
+
+  this.removeData = function(objectId) {
+    return $http({
+      method: 'DELETE',
+      url: "https://api.parse.com/1/classes/vent/" + objectId
+    })
+  }
 })

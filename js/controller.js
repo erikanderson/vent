@@ -16,6 +16,12 @@ app.controller('mainController', function($scope, dataService) {
     $scope.getVentData();
   }
 
+  $scope.removeVentData = function() {
+    dataService.removeData().then(function(response){
+      console.log(response);
+    });
+  };
+
   $scope.getVentData();
 
 })
